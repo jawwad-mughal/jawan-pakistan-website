@@ -338,7 +338,7 @@ a{
     padding: 32px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.906);
 }
 .label{
     margin-top: 20px;
@@ -356,12 +356,19 @@ input::placeholder{
     height: 50px;
     border-radius: 5px;
     border: 1px solid gray;
+    font-size: 20px;
 }
-.input_msg{
+.textarea{
     border: 1px solid gray;
     margin-top: 10px;
     height: 160px;
     border-radius: 5px;
+    resize: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+.textarea:focus{
+    outline: none;
 }
 button{
     background-color: rgb(11, 74, 11);
@@ -372,6 +379,59 @@ button{
     border: none;
     border-radius: 5px;
 }
+.section7_wrap{
+    margin: 0px 100px 96px 100px;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.image7>img{
+    width: 350px;
+}
+.company{
+    padding: 0px 20px;
+}
+.company>h2{
+    color: rgb(21, 51, 21);
+    margin-bottom: 12px;
+}
+.company>p{
+    color: rgb(75, 169, 75);
+    font-size: 20px;
+    padding: 2px 0px;
+}
+.contact_details{
+    padding: 0px 20px;
+}
+.contact_details>h2{
+    color: rgb(21, 51, 21);
+    margin-bottom: 12px;
+}
+.contact_details>p{
+    color: rgb(75, 169, 75);
+    font-size: 20px;
+    padding: 2px 0px;
+}
+.footer{
+    padding: 16px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #a6e4f28c;
+}
+.footer>p{
+    font-size: 20px;
+}
+.icon>i{
+    font-size: 25px;
+    padding: 5px;
+    color: rgb(88, 84, 84); 
+}
+
 
 @media (max-width:1300px) {
     .main_header{
@@ -697,6 +757,23 @@ button{
         display: flex;
         flex-direction: column;
         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.45);
+    }
+    .section7_wrap{
+        margin: 0px 0px 75px 0px;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer{
+        padding: 16px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #bdebf63f;
+        gap: 10px;
     }
 }
 
